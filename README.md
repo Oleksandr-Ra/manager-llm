@@ -10,7 +10,7 @@ FastAPI-based service featuring a client manager to handle requests to multiple 
 - git remote add origin https://github.com/your-name/manager-llm.git
 - git branch -M main
 - git pull origin main
-- rename .env-example to .env
+- rename .env.example to .env
 - change GROQ_API_KEY
 - pip install uv (if not installed)
 - uv sync
