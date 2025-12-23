@@ -1,0 +1,22 @@
+{
+  "[python]": {
+    "editor.formatOnSave": true,
+
+    // отключает встроенный форматтер Python
+    "python.formatting.provider": "none",
+
+    "editor.defaultFormatter": "charliermarsh.ruff",
+
+    // включает Ruff Linting
+    "ruff.enable": true,
+    "ruff.lint.enable": true,
+    "ruff.lint.args": ["--fix"],
+
+    // включает форматирование Ruff
+    "ruff.format.enable": true,
+
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  }
+}

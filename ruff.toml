@@ -1,0 +1,27 @@
+line-length = 88
+target-version = "py314"
+
+[lint]
+select = [
+    "E",     # Ошибки стиля PEP8
+    "F",     # Ошибки pyflakes (реальные ошибки)
+    "B",     # bugbear — логические баги
+    "I",     # isort — сортировка импортов
+    "UP",    # pyupgrade — современные возможности Python
+    "SIM",   # упрощения кода
+    "ASYNC", # async-анализ
+]
+ignore = ["E501"]
+
+[format]
+quote-style = "double"  # двойные кавычки
+indent-style = "space"
+line-ending = "lf"
+skip-magic-trailing-comma = false
+
+[lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+
+[lint.per-file-ignores]
+"alembic/versions/*.py" = ["E501", "F401", "F841"]
